@@ -1,0 +1,265 @@
+html{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	display: flex;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial;
+}
+																													/*mobile first*/
+.leftSide{
+	heigth: 100%;
+	width: 100%;
+}
+.container{
+	padding: 10px 20px;	
+}
+.navigation{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 14px;
+}
+.navigationLinks a{
+	text-decoration: none;
+	padding-left: 20px;
+	color: #6A707B;
+	padding-bottom: 21px;
+}
+.titleLogo{
+	display: none;
+}
+.content{
+	width: 335px;
+	height: 370px;
+	background: linear-gradient(white, #F2F5FA);
+}
+#article{
+	font-family: Georgia;
+	font-size: 24px;
+	margin-top: 30px;
+	line-height: 34px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	background-image: url("../img/image_summer.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.text{
+	font-size: 14px;
+	margin: 10px 0px;
+	color: #6A707B;
+}
+.inputField{
+	margin: 20px 0px;
+}
+.email{
+	margin-top: 10px;
+	padding-left: 20px; 
+	width: 92%;
+	height: 60px;
+	background-image: url("../img/ic_arrow.png");
+	background-repeat: no-repeat;
+	background-position: 95% center; 
+	outline: none;
+	font-size: 15px;
+	border: none;
+	border-left: 2px solid #4066A5;
+}
+.email:focus{
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+.email:hover{
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+	background-image: url("../img/ic_arrow-2.png");
+
+}
+.checkbox{
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+}
+input[type=checkbox]{
+	display: none;
+}
+input[type=checkbox] + label {
+    display:inline-block;
+    padding: 0 0 0 0px;
+    background:url("../img/Base.png") no-repeat;
+    height: 26px;
+    width: 26px;
+}
+input[type=checkbox]:checked + label {
+    background:url("../img/Checkmark.png") no-repeat;
+    height: 26px;
+    width: 26px;
+    display:inline-block;
+}
+.terms{
+
+	margin-left: 15px;
+	color: #6A707B;
+}
+.terms a{
+	color: #131821;
+}
+.terms a:hover{
+	color: #4066A5;
+}
+.terms a[tabindex]:focus{
+	color: #233759;
+	outline: none;
+}
+hr{
+	margin: 20px 0;
+	color: #E3E3E4;
+}
+.footer{
+	display: flex;
+	margin: 0px 35px;
+	justify-content: space-around;
+
+}
+.facebookIcon{
+	width: 46px;
+	height: 46px;
+	background-image: url("../img/Facebook.png");
+	transition: background-image 0.5s;
+}
+.facebookIcon:hover{
+	background-image: url("../img/FacebookCover.png");
+}
+.instagramIcon{
+	width: 46px;
+	height: 46px;
+	background-image: url("../img/Instagram.png");
+	transition: background-image 0.5s;
+}
+.instagramIcon:hover{
+	background-image: url("../img/InstagramCover.png");
+}
+.twitterIcon{
+	width: 46px;
+	height: 46px;
+	background-image: url("../img/Twitter.png");
+	transition: background-image 0.5s;
+}
+.twitterIcon:hover{
+	background-image: url("../img/TwitterCover.png");
+}
+.youtubeIcon{
+	width: 46px;
+	height: 46px;
+	background-image: url("../img/Youtube.png");
+	transition: background-image 0.5s;
+
+}
+.youtubeIcon:hover{
+	background-image: url("../img/YoutubeCover.png");
+}
+.rightSide{
+	display: none;
+}
+.leftSide{
+	width: 100%;
+}
+#error{
+	color: #6A707B;
+	font-size: 14px;
+	position: absolute;
+	width: 295px;
+	-webkit-animation: fadein 1s;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+																												/* Desktop width 1200px*/
+@media(min-width: 1199px){
+
+.page{
+	display: flex;
+	height: 100%;
+	width: 100%
+}
+.rightSide{
+	display: inline-flex;
+	background-image: url("../img/image_summer.png");
+	background-size: cover;
+	width: 70%;
+	height: 100%;
+	z-index: 98;
+
+}
+.leftSide{
+	width: 30%;
+	background: linear-gradient(white, #F2F5FA);
+	z-index: 99;
+}
+.titleLogo{
+	display: flex;
+	justify-content: flex-start;
+
+}
+.content{
+	background: none;
+	width: 100%;
+	height: 100%;
+}
+.container{
+	padding: 100px 20px;
+}
+.main{
+	background-image: none;
+}
+.navigationLinks{
+	margin-left: 20px;
+}
+.navigationLinks, .titleLogo{
+	margin-top: 10px;
+}
+.email{
+	width: 120%;
+	background-image: url("../img/ic_arrow.png");
+	}
+}
+																												/*Desktop width 1440px*/
+@media(min-width: 1439px){
+	.container{
+		padding: 100px 30px;
+	}
+}
+																												/*Desktop width 1600px*/
+@media(min-width: 1599px){
+	.container{
+		padding: 100px 60px;
+	}
+	.email{
+		width: 130%;
+	}
+}
+																										/*Desktop width 1920px and more*/
+@media(min-width: 1919px){
+	.container{
+		padding: 100px 100px;
+	}
+	.email{
+		width: 140%;
+	}
+}
